@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Hall Book</string>
+    <string name="tag_name_1">Fast and Seamless Booking</string>
+    <string name="fblogin_text">Connect with facebook</string>
+    <string name="googleplogin_text">Connect with google+</string>
+    <string name="signup_text">Not a member? Register here!</string>
+    <string name="tag_name_2">Just a couple of taps and your done</string>
+    <string name="your_details">Your Details</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="hall_description">At Chennai Convention Centre, we make sure the vision for your special event becomes a reality and goes off better than you envisage. Our three Venues offers everything you need to create the stunning occasion you and your guests will always remember. We’ve been making celebrations happen through our services since 2015, and can’t wait to work with you.</string>
+</resources>

@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_home">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        android:scrollbars="vertical">
+
+        <TextView
+            android:id="@+id/categoriesTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Categories"
+            android:paddingStart="5dp"/>
+
+        <LinearLayout
+            android:id="@+id/row1"
+            android:layout_below="@+id/categoriesTxt"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:foreground="?attr/selectableItemBackground"
+                android:layout_marginEnd="0.5dp"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/optBanquet"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/pos11"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:scaleType="fitXY"
+                    android:clickable="true"/>
+
+                <TextView
+                    android:id="@+id/option1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FFFFFF"
+                    android:text="Banquet Hall"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginLeft="6dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:foreground="?attr/selectableItemBackground"
+                android:layout_marginStart="0.5dp"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/optConf"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:clickable="true"
+                    android:src="@drawable/pos21"
+                    android:scaleType="fitXY"/>
+
+                <TextView
+                    android:id="@+id/option2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FFFFFF"
+                    android:text="Conference Hall"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginLeft="6dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"/>
+            </FrameLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/row2"
+            android:layout_below="@+id/row1"
+            android:layout_marginTop="1dp"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_marginEnd="0.5dp"
+                android:foreground="?attr/selectableItemBackground"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/optCater"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:src="@drawable/pos31"
+                    android:scaleType="fitXY"
+                    android:clickable="true"/>
+
+                <TextView
+                    android:id="@+id/option3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FFFFFF"
+                    android:text="Catering"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginLeft="6dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_marginStart="0.5dp"
+                android:foreground="?attr/selectableItemBackground"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/optBirth"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:src="@drawable/pos41"
+                    android:scaleType="fitXY"
+                    android:clickable="true"/>
+
+                <TextView
+                    android:id="@+id/option4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FFFFFF"
+                    android:text="Birthday Party"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginLeft="6dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"/>
+            </FrameLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/row3"
+            android:layout_below="@+id/row2"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_marginTop="1dp"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_marginEnd="0.5dp"
+                android:foreground="?attr/selectableItemBackground"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/optDecor"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:src="@drawable/pos51"
+                    android:scaleType="fitXY"
+                    android:clickable="true"/>
+
+                <TextView
+                    android:id="@+id/option5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FFFFFF"
+                    android:text="Function Decor"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginLeft="6dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_marginStart="0.5dp"
+                android:foreground="?attr/selectableItemBackground"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/optMakeUp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:src="@drawable/pos61"
+                    android:scaleType="fitXY"
+                    android:clickable="true"/>
+
+                <TextView
+                    android:id="@+id/option6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FFFFFF"
+                    android:text="Make up Artist"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginLeft="6dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"/>
+            </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/row4"
+            android:layout_below="@+id/row3"
+            android:layout_width="match_parent"
+            android:layout_marginTop="1dp"
+            android:layout_height="180dp"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_marginEnd="0.5dp"
+                android:foreground="?attr/selectableItemBackground"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/optOutCater"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:src="@drawable/pos71"
+                    android:scaleType="fitXY"
+                    android:clickable="true"/>
+
+                <TextView
+                    android:id="@+id/option7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FFFFFF"
+                    android:text="Outstation Catering"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginLeft="6dp"
+                    android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+            </FrameLayout>
+
+
+        </LinearLayout>
+        <!--<android.support.v7.widget.RecyclerView-->
+        <!--android:id="@+id/recycle_view"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:paddingLeft="10dp"-->
+        <!--android:paddingRight="10dp"-->
+        <!--android:clipToPadding="false"-->
+        <!--android:scrollbars="vertical" />-->
+
+    </RelativeLayout>
+
+</android.support.v4.widget.NestedScrollView>
